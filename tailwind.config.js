@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-      'dm-sans'  : ['DM Sans', 'serif'],
-      'quattro': ['Quattrocento', 'serif'],
+      'dm-sans'  : ['DM Sans', 'sans-serif'],
+      'quattro': ['Quattrocento', 'sans-serif'],
       sans : ['Nunito', ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -33,6 +33,7 @@ module.exports = {
     },
   },
   plugins: [
-    // require('flowbite/plugin')
+    require('flowbite/plugin')
+
   ],
 }
