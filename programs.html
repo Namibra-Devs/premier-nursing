@@ -23,47 +23,38 @@
 <body>
     <!-- Navigation Bar -->
     <header class="sticky bg-primary-100  mx-auto border-b-2 border-primary-100 top-0 z-50 w-full">
-      <nav class="navbar sticky flex justify-between items-center mx-auto lg:px-4 lg:py-2 py-4 w-4/5">
-        <div class="logo font-bold text-primary-lt"><a href="index.html"> Premier Nursing College</a></div>
-        <ul class="hidden nav-list lg:flex text-primary-dark">
-          <li class="nav-item px-2 py-2 mx-1"><a href="staff.html" class="nav-link">Staff Portal</a></li>
-          <li class="nav-item px-2 py-2 mx-1"><a href="student.html" class="nav-link">Student Portal</a></li>
-          <!-- <li class="nav-item"><a href="" class="nav-link"></a></li> -->
+    
+      <nav class="navbar sticky flex justify-between items-center mx-auto lg:px-4 lg:py-2 py-4 lg:w-4/5 px-10">
+        <div class="logo font-bold text-primary-lt"><a href="index.html">Premier Nursing College</a></div>
+        <div>
+        <ul class="hidden h-screen lg:h-auto nav-list mx-auto lg:flex items-center justify-center text-primary-dark absolute px-3 lg:px-0 lg:relative top-64 pt-20 lg:pt-0 space-y-2 lg:space-y-0 left-0 lg:top-auto lg:left-auto w-full lg:w-auto bg-primary-100">
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="staff.html" class="nav-link">Staff Portal</a></li>
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="student.html" class="nav-link">Student Portal</a></li>
         </ul>
-        <!-- <div class="lg:hidden">
-          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 lg:hidden cursor-pointer">
-          <path d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" stroke-linecap="round" stroke-linejoin="round" class="open-btn"></path>
-          <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
-            stroke-linejoin="round" class="text-primary-400 close-btn hidden"></path>
+      </div>
+      <svg class="bars  outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 rotate-180 w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>toggle Menu</title>
+        <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" class="open-btn text-primary-lt"></path>   
+  
+          <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" class="close-btn hidden text-primary-600"></path>
         </svg>
-        </div> -->
-        <!-- <div class="z-40 relative lg:hidden"> -->
-          <button title="toggle-menu" type="button"
-            class="bars outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 rotate-180">   
-            <svg class="fill-current w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8"><title>toggle Menu</title>
-              <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>        
-              <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
-            stroke-linejoin="round" class="text-primary-400 close-btn hidden"></path>
-              </svg>
-          </button>
-        <!-- </div> -->
       </nav>
-      <div class="w-screen mx-auto  bg-white sticky">
-        <div class="navbar-below flex justify-between items-start mx-auto w-4/5">
-          <ul class="nav-list hidden lg:flex py-2 space-x-10">
-            <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="programs.html" class="inline-block">Programs <svg
+      <div class="w-screen mx-auto bg-white sticky">
+        <div class="navbar flex justify-between items-start mx-auto w-4/5">
+          <ul class="hidden nav-below lg:flex text-primary-dark absolute px-6 lg:px-0 lg:relative left-0 lg:left-auto w-full lg:w-auto bg-primary-100 lg:bg-white py-2 lg:py-0 lg:space-x-10 space-y-2 lg:space-y-0">
+           
+            <!-- Active Link -->
+            <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 border-b-2 w-1/2 lg:w-auto border-primary-400 text-primary-400 bg-primary-150"><a href="programs.html" class="flex justify-between items-center lg:inline-block">Programs <svg
                   aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
                   <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg></a></li>
-            <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="admissions.html">Admissions</a></li>
-            <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="newsevents.html">News and Events <svg aria-hidden="true"
+            <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="admissions.html" class="flex justify-between items-center lg:inline-block">Admissions</a></li>
+            <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="newsevents.html" class="flex justify-between items-center lg:inline-block">News and Events <svg aria-hidden="true"
                   fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
                   <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg></a></li>
-            <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="gallery.html" class="flex justify-between items-center lg:inline-block">Gallery</a></li>
           </ul>
         </div>
       </div>
