@@ -24,52 +24,60 @@
     <title>Premier Nursing College | Admissions</title>
 </head>
 
-<body>
+<body class="font-dm-sans">
     <!-- Navigation Bar -->
     <header class="sticky bg-primary-100  mx-auto border-b-2 border-primary-100 top-0 z-50 w-full">
-        <nav class="navbar sticky flex justify-between items-center mx-auto px-4 py-2 w-4/5">
-            <div class="logo font-bold text-primary-lt"><a href="index.html"> Premier Nursing College</a></div>
-            <ul class="nav-list flex text-primary-dark">
-                <li class="nav-item px-2 py-2 mx-1"><a href="staff.html" class="nav-link">Staff Portal</a></li>
-                <li class="nav-item px-2 py-2 mx-1"><a href="student.html" class="nav-link">Student Portal</a></li>
-                <!-- <li class="nav-item"><a href="" class="nav-link"></a></li> -->
-            </ul>
+        <nav class="navbar sticky flex justify-between items-center mx-auto lg:px-4 lg:py-2 py-4 w-4/5">
+          <div class="logo font-bold text-primary-lt"><a href="index.html"> Premier Nursing College</a></div>
+          <ul class="hidden nav-list lg:flex text-primary-dark">
+            <li class="nav-item px-2 py-2 mx-1"><a href="staff.html" class="nav-link">Staff Portal</a></li>
+            <li class="nav-item px-2 py-2 mx-1"><a href="student.html" class="nav-link">Student Portal</a></li>
+            <!-- <li class="nav-item"><a href="" class="nav-link"></a></li> -->
+          </ul>
+          <!-- <div class="lg:hidden">
             <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 rotate-180 lg:hidden">
-                <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="open-btn"></path>
+            xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 lg:hidden cursor-pointer">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" stroke-linecap="round" stroke-linejoin="round" class="open-btn"></path>
+            <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
+              stroke-linejoin="round" class="text-primary-400 close-btn hidden"></path>
+          </svg>
+          </div> -->
+          <!-- <div class="z-40 relative lg:hidden"> -->
+            <button title="toggle-menu" type="button"
+              class="bars outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 rotate-180">   
+              <svg class="fill-current w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8"><title>toggle Menu</title>
+                <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>        
                 <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
-                    stroke-linejoin="round" class="text-primary-400 close-btn"></path>
-            </svg>
+              stroke-linejoin="round" class="text-primary-400 close-btn hidden"></path>
+                </svg>
+            </button>
+          <!-- </div> -->
         </nav>
-        <div class="w-s creen mx-auto  bg-white sticky">
-            <div class="navbar-below flex justify-between items-start mx-auto w-4/5">
-                <ul class="nav-list flex py-2 space-x-10">
-                    <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="programs.html"
-                            class="inline-block">Programs <svg aria-hidden="true" fill="none" stroke="currentColor"
-                                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                class="w-4 h-4 inline-block">
-                                <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg></a></li>
-                    <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="admissions.html">Admissions</a></li>
-                    <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="newsevents.html">News and Events <svg
-                                aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
-                                <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </svg></a></li>
-                    <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
+        <div class="w-screen mx-auto  bg-white sticky">
+          <div class="navbar-below flex justify-between items-start mx-auto w-4/5">
+            <ul class="nav-list hidden lg:flex py-2 space-x-10">
+              <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="programs.html" class="inline-block">Programs <svg
+                    aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
+                    <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></a></li>
+              <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="admissions.html">Admissions</a></li>
+              <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="newsevents.html">News and Events <svg aria-hidden="true"
+                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
+                    <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></a></li>
+              <li class="nav-item mx-1 px-4 py-2 text-primary-lt"><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
 
     <!-- Admission Requirements -->
     <section class="w-full mx-auto text-primary-dark">
         <div class="w-4/5 mx-auto py-20">
             <h1 class="font-bold text-4xl text-primary-lt font-quattro pb-20">Admission Requirements</h1>
-            <div class="flex justify-center items-start">
+            <div class="lg:flex justify-center items-start space-y-10 lg:space-y-0">
                 <div class="space-y-2 mr-10">
                     <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 bg-primary-150 p-2 rounded-md mb-5">
@@ -131,116 +139,106 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section class="w-full mx-auto">
         <div class="w-4/5 mx-auto py-20">
-            <h1 class="font-bold font-quattro text-4xl text-primary-lt pb-20">Contact Us</h1>
-
-            <div class="flex space-x-16 mx-auto justify-between">
-                <div class="contact-form w-full">
-                    <form action="" class="form space-y-5">
-                        <div class="space-y-1">
-                            <label for="name" class="ml-1">Name</label> <br>
-                            <input type="text" name="name" placeholder="John Doe"
-                                class="w-4/5 border-2 outline-none rounded-md px-4 py-2">
-                        </div>
-                        <div class="space-y-1">
-                            <label for="email" class="ml-1">Email</label><br>
-                            <input type="text" name="email" placeholder="johndoe@email.com"
-                                class="w-4/5 border-2 outline-none rounded-md px-4 py-2">
-                        </div>
-                        <div class="space-y-1">
-                            <label for="Message" class="ml-1">Message</label><br>
-                            <textarea name="message" id="" cols="" rows="" placeholder="Leave us a message..."
-                                class="w-4/5 border-2 outline-none rounded-md px-4 py-2"></textarea>
-                        </div>
-                        <div class="pt-4">
-                            <button
-                                class="border-2 border-primary-700 text-primary-100 px-8 py-2 rounded-md bg-primary-700 hover:bg-primary-800 active:bg-primary-600">Send
-                                Message</button>
-                        </div>
-                    </form>
+          <h1 class="font-bold font-quattro text-4xl text-primary-lt pb-20">Contact Us</h1>
+    
+          <div class="flex flex-col-reverse lg:flex-row lg:space-x-16 mx-auto lg:justify-between mt-10 lg:mt-0 w-full">
+            <div class="contact-form w-full mx-auto">
+              <form action="" class="form space-y-5 mt-10 lg:mt-0">
+                <div class="space-y-1">
+                  <label for="name" class="ml-1">Name</label> <br>
+                  <input type="text" name="name" placeholder="John Doe"
+                    class="lg:w-4/5 md:w-1/2 w-full border-2 outline-none rounded-md px-4 py-2">
                 </div>
-                <div class="w-full flex">
-                    <div class=" w-full h-full -mt-12 -mr-36 z-20">
-                        <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
-                            src="https://maps.google.com/maps?width=350&amp;height=450&amp;hl=en&amp;q=%20Tamale+(Premier%20Nursing%20Colloge)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                            width="350" height="450" frameborder="0"></iframe><a href='https://maps-generator.com/'>
-                        </a>
-                    </div>
-                    <div class="h-[35rem] w-[20rem] -mt-24 -ml-32 bg-secondary -z-30"></div>
+                <div class="space-y-1">
+                  <label for="email" class="ml-1">Email</label><br>
+                  <input type="text" name="email" placeholder="johndoe@email.com"
+                    class="lg:w-4/5 md:w-1/2 w-full border-2 outline-none rounded-md px-4 py-2">
                 </div>
+                <div class="space-y-1">
+                  <label for="Message" class="ml-1">Message</label><br>
+                  <textarea name="message" id="" cols="" rows="" placeholder="Leave us a message..."
+                    class="lg:w-4/5 md:w-1/2 w-full border-2 outline-none rounded-md px-4 py-2"></textarea>
+                </div>
+                <div class="pt-4">
+                  <button
+                    class="border-2 border-primary-700 text-primary-100 px-8 py-2 rounded-md bg-primary-700 hover:bg-primary-800 active:bg-primary-600 lg:w-4/5 md:w-1/2 w-full">Send
+                    Message</button>
+                </div>
+              </form>
             </div>
+            <div class="w-full flex">
+              <div class=" w-full h-full -mt-12 -mr-36 z-20">
+                <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                  src="https://maps.google.com/maps?width=350&amp;height=450&amp;hl=en&amp;q=%20Tamale+(Premier%20Nursing%20Colloge)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  width="350" height="450" frameborder="0"></iframe><a href='https://maps-generator.com/'> </a>
+              </div>
+              <div class="h-[35rem] w-[20rem] -mt-24 -ml-32 bg-secondary -z-30"></div>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="w-full mx-auto bg-primary-900">
+      </section>
+    
+      <footer class="w-full mx-auto bg-primary-900">
         <div class="mx-auto w-4/5 py-10">
-            <div class="grid grid-cols-3 gap-12 space-x-5 w-full">
-                <div class="text-primary-100 space-y-5">
-                    <a href="index.html" class="font-bold text-primary-100 text-2xl font-quattro">Premier Nursing
-                        College</a>
-                    <p class="text-primary-100 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat
-                        dicta quod ab quo? Excepturi, omnis molestias ipsam necessitatibus est sint!</p>
-                    <a href="" class="text-sm">+233 2431 567 890</a> <br>
-                    <a href="mailto:info@premeirnursingcollege.com" class="text-sm">info@premeirnursingcollege.com</a>
-                </div>
-
-                <div class="text-primary-100 space-y-5 w-full">
-                    <h4 class="text-2xl font-quattro font-bold">Quick Links</h4>
-                    <ul class="grid grid-cols-2 gap-2 w-full">
-                        <li>
-                            <a href="programs.html" class="text-sm">Programs</a>
-                        </li>
-                        <li>
-                            <a href="admissions.html" class="text-sm">Admissions</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">Faculty</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">Staff</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">News</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">Events</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">Staff Portal</a>
-                        </li>
-                        <li>
-                            <a href="" class="text-sm">Student Portal</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="w-full">
-                    <ul class="flex space-x-5">
-                        <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i
-                                    class="fab fa-facebook"></i></a></li>
-                        <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i
-                                    class="fab fa-linkedin"></i></a></li>
-                        <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i
-                                    class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
+          <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:space-x-5 w-full mx-auto space-y-10 md:space-y-0">
+            <div class="text-primary-100 space-y-5">
+              <a href="index.html" class="font-bold text-primary-100 text-2xl font-quattro">Premier Nursing College</a>
+              <p class="text-primary-100 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                dicta quod ab quo? Excepturi, omnis molestias ipsam necessitatibus est sint!</p>
+              <a href="" class="text-sm">+233 2431 567 890</a> <br>
+              <a href="mailto:info@premeirnursingcollege.com" class="text-sm">info@premeirnursingcollege.com</a>
             </div>
-            <div>
+    
+            <div class="text-primary-100 space-y-5 w-full">
+              <h4 class="text-2xl font-quattro font-bold">Quick Links</h4>
+              <ul class="grid grid-cols-2 gap-2 w-full">
+                <li>
+                  <a href="programs.html" class="text-sm">Programs</a>
+                </li>
+                <li>
+                  <a href="admissions.html" class="text-sm">Admissions</a>
+                </li>
+                <li>
+                  <a href="" class="text-sm">Faculty</a>
+                </li>
+                <li>
+                  <a href="staff.html" class="text-sm">Staff</a>
+                </li>
+                <li>
+                  <a href="gallery.html" class="text-sm">Gallery</a>
+                </li>
+                <li>
+                  <a href="newsevents.html" class="text-sm">News</a>
+                </li>
+                <li>
+                  <a href="newsevents.html" class="text-sm">Events</a>
+                </li>
+                <li>
+                  <a href="staff.html" class="text-sm">Staff Portal</a>
+                </li>
+                <li>
+                  <a href="student.html" class="text-sm">Student Portal</a>
+                </li>
+              </ul>
             </div>
+    
+            <div class="w-full">
+              <ul class="flex space-x-5">
+                <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+          </div>
         </div>
-        <p class="text-primary-50 text-center text-sm py-8 border-t border-t-primary-100">&copy; Premier Nursing College
-            2023</p>
-
-    </footer>
+        <p class="text-primary-50 text-center text-sm py-4 md:py-8 border-t border-t-primary-100">&copy; Premier Nursing College 2023</p>
+    
+      </footer>
     <script src="/main.js" defer></script>
 </body>
 
