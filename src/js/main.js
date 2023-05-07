@@ -34,8 +34,22 @@ window.addEventListener('DOMContentLoaded', () => {
               menuBelow.classList.add('hidden');
               open.classList.remove('hidden');
               close.classList.add('hidden');
+              dropMenu.classList.add('hidden')
           }
       });
+
+
+    //   Dropdown menu open close
+    
+    dropDown.addEventListener('click', () => {
+        dropMenu.classList.toggle('hidden')
+        console.log("Drop menu clicked!")
+
+        // const links = document.querySelector()
+    })
+
+
+
 
   });
   

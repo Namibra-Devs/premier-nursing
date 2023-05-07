@@ -49,17 +49,54 @@
         <ul class="hidden nav-below lg:flex text-primary-dark absolute px-6 lg:px-0 lg:relative left-0 lg:left-auto w-full lg:w-auto bg-primary-100 lg:bg-white py-2 lg:py-0 lg:space-x-10 space-y-2 lg:space-y-0">
          
           <!-- Active Link -->
-          <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 border-b-2 w-1/2 lg:w-auto border-primary-400 text-primary-400 bg-primary-150"><a href="programs.html" class="flex justify-between items-center lg:inline-block">Programs <svg
+          <li class="lg:mx-1 ">
+            <!-- <a href="programs.html" class="flex justify-between items-center lg:inline-block"> -->
+            
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-center flex justify-between items-center px-4 py-2 lg:px-6 lg:py-3 border-b-2 w-1/2 lg:w-auto border-primary-400 text-primary-400 bg-primary-150"  type="button">Programs <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden bg-white divide-y rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 font-dm-sans text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+      <li class="nav-item">
+        <a href="#" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Nursing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Pharmacy</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Medical Lab</a>
+      </li>
+    
+    </ul>
+</div>
+<!-- <svg
                 aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
                 <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg></a></li>
+              </svg></a> -->
+            </li>
+
           <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="admissions.html" class="flex justify-between items-center lg:inline-block">Admissions</a></li>
-          <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="newsevents.html" class="flex justify-between items-center lg:inline-block">News and Events <svg aria-hidden="true"
+
+          <li class=" lg:mx-1">
+            <button id="dropdownButton" data-dropdown-toggle="dropdownmenu" class="text-center flex justify-between items-center px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt" type="button">News and Events<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+<!-- Dropdown menu -->
+<div id="dropdownmenu" class="z-10 hidden bg-white divide-y rounded shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 font-dm-sans text-primary-lt dark:text-gray-200" aria-labelledby="dropdownButton">
+      <li class="nav-item">
+        <a href="newsevents.html" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">News</a>
+      </li>
+      <li class="nav-item">
+        <a href="newsevents.html" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Events</a>
+      </li>
+   
+    </ul>
+</div>
+            <!-- <a href="newsevents.html" class="flex justify-between items-center lg:inline-block">News and Events <svg aria-hidden="true"
                 fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
                 <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg></a></li>
+              </svg></a> -->
+            </li>
           <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="gallery.html" class="flex justify-between items-center lg:inline-block">Gallery</a></li>
         </ul>
       </div>
