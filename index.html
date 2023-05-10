@@ -14,14 +14,15 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=DM+Serif+Text&family=Quattrocento:wght@400;700&display=swap"
     rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <!-- Flowbite -->
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" /> -->
+  <!-- Flowbite -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-  
+
   <title>Premier Nursing | Home</title>
 </head>
 
@@ -29,156 +30,247 @@
 
   <!-- Navigation Bar -->
   <header class="sticky bg-primary-100  mx-auto border-b-2 border-primary-100 top-0 z-50 w-full">
-    
+
     <nav class="navbar sticky flex items-center justify-between mx-auto lg:px-4 lg:py-2 py-4 lg:w-4/5 px-10 z-50">
       <div class="logo font-bold text-primary-lt"><a href="index.html">Premier Nursing College</a></div>
       <div>
-      <ul class="hidden h-screen lg:h-auto nav-list mx-auto lg:flex items-center justify-center text-primary-dark absolute px-3 lg:px-0 lg:relative top-64 pt-20 lg:pt-0 space-y-2 lg:space-y-0 left-0 lg:top-auto lg:left-auto w-full lg:w-auto bg-primary-100">
-        <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="staff.html" class="nav-link">Staff Portal</a></li>
-        <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="student.html" class="nav-link">Student Portal</a></li>
-      </ul>
-    </div>
-    <svg class="bars  outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 rotate-180 w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>toggle Menu</title>
-      <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" class="open-btn text-primary-lt"></path>   
+        <ul
+          class="hidden h-screen lg:h-auto nav-list mx-auto lg:flex items-center justify-center text-primary-dark absolute px-3 lg:px-0 lg:relative top-80 pt-20 lg:pt-0 space-y-2 lg:space-y-0 left-0 lg:top-auto lg:left-auto w-full lg:w-auto bg-primary-100">
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="staff.html" class="nav-link">Staff Portal</a>
+          </li>
+          <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="student.html" class="nav-link">Student Portal</a>
+          </li>
+        </ul>
+      </div>
+      <svg
+        class="bars outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 rotate-180 w-6 h-6"
+        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <title>toggle Menu</title>
+        <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"
+          class="open-btn text-primary-lt"></path>
 
-        <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" class="close-btn hidden text-primary-600"></path>
+        <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
+          stroke-linejoin="round" class="close-btn hidden text-primary-600"></path>
       </svg>
     </nav>
     <div class="w-screen mx-auto bg-white sticky">
       <div class="navbar flex justify-between items-start mx-auto w-4/5">
-        <ul class="hidden nav-below lg:flex text-primary-dark absolute px-6 lg:px-0 lg:relative left-0 lg:left-auto w-full lg:w-auto bg-primary-100 lg:bg-white py-2 lg:py-0 lg:space-x-10 space-y-2 lg:space-y-0">
-         
+        <ul
+          class="hidden nav-below lg:flex text-primary-dark absolute px-6 lg:px-0 lg:relative left-0 lg:left-auto w-full lg:w-auto bg-primary-100 lg:bg-white py-2 pb-24 lg:py-0 lg:space-x-10 space-y-4 lg:space-y-0">
+
           <!-- Active Link -->
-          <li class="lg:mx-1 ">
+          <!-- <li class="lg:mx-1"> -->
             <!-- <a href="programs.html" class="flex justify-between items-center lg:inline-block"> -->
+
+            <!-- <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+              class="text-center flex justify-between items-center px-4 py-2 lg:px-6 lg:py-3 border-b-2 w-1/2 lg:w-auto border-primary-400 text-primary-400 bg-primary-150"
+              type="button">Programs <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg></button> -->
+            <!-- Dropdown menu -->
+            <!-- <div id="dropdown" class="z-10 hidden bg-white shadow w-44 dark:bg-gray-700">
+              <ul class="nav-list py-2 font-dm-sans text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDefaultButton">
+                <li class="nav-item">
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Nursing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Pharmacy</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Medical
+                    Lab</a>
+                </li>
+
+              </ul>
+            </div>
+          </li> -->
+
+          <li class="flex group lg:mx-1 justify-between items-center px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt">
+            <a href="#" class="mr-1 drop-btn">Programs</a> 
+            <svg class="w-4 h-4 ml-2 arrow-down-up" aria-hidden="true" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>                <!-- Submenu starts -->
+            <ul class="drop-menu absolute bg-white p-2 mt-5 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-200 ease-in-out origin-top shadow-lg z-20">
+              <li class="nav-item leading-8"><a href="" class="block px-2 py-1 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Nursing</a></li>
+              <li class="nav-item leading-8"><a href="" class="block px-2 py-1 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Medical Lab</a></li>
             
-<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-center flex justify-between items-center px-4 py-2 lg:px-6 lg:py-3 border-b-2 w-1/2 lg:w-auto border-primary-400 text-primary-400 bg-primary-150"  type="button">Programs <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-<!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden bg-white divide-y rounded-lg shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 font-dm-sans text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-      <li class="nav-item">
-        <a href="#" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Nursing</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Pharmacy</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Medical Lab</a>
-      </li>
-    
-    </ul>
-</div>
-<!-- <svg
-                aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
-                <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg></a> -->
-            </li>
+            </ul>
+            <!-- Submenu ends -->
+          </li>
 
-          <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="admissions.html" class="flex justify-between items-center lg:inline-block">Admissions</a></li>
+          <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a
+              href="admissions.html" class="flex justify-between items-center lg:inline-block">Admissions</a></li>
+              <li class="flex relative group lg:mx-1 justify-between items-center px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt ">
+                <a href="#" class="mr-1 drop-btn">News and Events </a> 
+                <svg class="w-4 h-4 ml-2 arrow-down-up" aria-hidden="true" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>                <!-- Submenu starts -->
+                <ul class="drop-menu absolute bg-white p-3 mt-5 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg z-20">
+                  <li class="leading-8 nav-item"><a href="newsevents.html" class="block px-2 py-1 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">New</a></li>
+                  <li class="leading-8 nav-item"><a href="newsevents.html" class="block px-2 py-1 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Events</a></li>
+                
+                </ul>
+                <!-- Submenu ends -->
+              </li>
 
-          <li class=" lg:mx-1">
-            <button id="dropdownButton" data-dropdown-toggle="dropdownmenu" class="text-center flex justify-between items-center px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt" type="button">News and Events<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-<!-- Dropdown menu -->
-<div id="dropdownmenu" class="z-10 hidden bg-white divide-y rounded shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 font-dm-sans text-primary-lt dark:text-gray-200" aria-labelledby="dropdownButton">
-      <li class="nav-item">
-        <a href="newsevents.html" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">News</a>
-      </li>
-      <li class="nav-item">
-        <a href="newsevents.html" class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Events</a>
-      </li>
-   
-    </ul>
-</div>
-            <!-- <a href="newsevents.html" class="flex justify-between items-center lg:inline-block">News and Events <svg aria-hidden="true"
-                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block">
-                <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg></a> -->
-            </li>
-          <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="gallery.html" class="flex justify-between items-center lg:inline-block">Gallery</a></li>
+          <!-- <li class=" lg:mx-1">
+            <button id="dropdownButton" data-dropdown-toggle="dropdownmenu"
+              class="text-center flex justify-between items-center px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt hasSubMenu"
+              type="button">News and Events<svg class="w-4 h-4 ml-2 arrow-down-up" aria-hidden="true" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg></button> -->
+            <!-- Dropdown menu -->
+            <!-- [[<div id="dropdownmenu" class="z-10 hidden hover:block bg-white divide-y shadow w-44 dark:bg-gray-700">
+              <ul class="nav-list subMenu hidden py-2 font-dm-sans text-primary-lt dark:text-gray-200"
+                aria-labelledby="dropdownButton">
+                <li class="nav-item">
+                  <a href="newsevents.html"
+                    class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="newsevents.html"
+                    class="block px-4 py-2 hover:bg-primary-150 hover:text-primary-400 dark:hover:bg-gray-600 dark:hover:text-white">Events</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>]] -->
+          <li class="nav-item lg:mx-1 px-4 py-2 lg:px-6 lg:py-3 w-1/2 lg:w-auto text-primary-lt"><a href="gallery.html"
+              class="flex justify-between items-center lg:inline-block">Gallery</a></li>
         </ul>
+
       </div>
     </div>
   </header>
 
   <!-- Hero Banner -->
   <section class="hero-header text-primary-dark">
- 
-<div id="default-carousel" class="relative w-full mx-auto" data-carousel="slide">
-  <!-- Carousel wrapper -->
-  <div class="relative overflow-hidden h-[34rem]">
-    <!-- Item 1 -->
-    <div class="hidden transition-transform duration-700 ease-in-out" data-carousel-item>
-        <div class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10"></div>
-          <img src="assets/imgs/carousel4.jpg" class="absolute w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+
+    <div id="default-carousel" class="relative w-full mx-auto" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative overflow-hidden h-[34rem]">
+        <!-- Item 1 -->
+        <div class="hidden transition-transform duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10">
+          </div>
+          <img src="assets/imgs/carousel4.jpg"
+            class="absolute w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
           <div class="hero-content absolute inset-0 flex flex-col justify-end pb-10 items-center text-white z-30">
             <h1 class="hero-title md:text-4xl text-2xl font-bold mb-4 font-quattro">Admission Requirements</h1>
-            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro. Ex itaque voluptas dolorem harum incidunt!</p>
+            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro.
+              Ex itaque voluptas dolorem harum incidunt!</p>
           </div>
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10"></div>
-          <img src="assets/imgs/cariusel3.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10">
+          </div>
+          <img src="assets/imgs/cariusel3.jpg"
+            class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
           <div class="hero-content absolute inset-0 flex flex-col justify-end pb-10 items-center text-white z-30">
             <h1 class="hero-title md:text-4xl text-2xl font-bold mb-4 font-quattro">Hero Title 4</h1>
-            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro. Ex itaque voluptas dolorem harum incidunt!</p>
+            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro.
+              Ex itaque voluptas dolorem harum incidunt!</p>
           </div>
         </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10"></div>
-          <img src="assets/imgs/carousel2.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10">
+          </div>
+          <img src="assets/imgs/carousel2.jpg"
+            class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
           <div class="hero-content absolute inset-0 flex flex-col justify-end pb-10 items-center text-white z-30">
             <h1 class="hero-title text-2xl md:text-4xl font-bold mb-4 font-quattro">Hero Title 4</h1>
-            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro. Ex itaque voluptas dolorem harum incidunt!</p>
+            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro.
+              Ex itaque voluptas dolorem harum incidunt!</p>
           </div>
         </div>
-      <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10"></div>
-          <img src="assets/imgs/caroousel1.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10">
+          </div>
+          <img src="assets/imgs/caroousel1.jpg"
+            class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
           <div class="hero-content absolute inset-0 flex flex-col justify-end pb-10 items-center text-white z-30">
             <h1 class="hero-title text-2xl md:text-4xl font-bold mb-4 font-quattro">Hero Title 4</h1>
-            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro. Ex itaque voluptas dolorem harum incidunt!</p>
+            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro.
+              Ex itaque voluptas dolorem harum incidunt!</p>
           </div>
         </div>
-      <!-- Item 5 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10"></div>
-        <img src="assets/imgs/carousel5.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        <div class="hero-content absolute inset-0 flex flex-col justify-end pb-10 items-center text-white z-30">
-          <h1 class="hero-title text-2xl md:text-4xl font-bold mb-4 font-quattro">Hero Title 5</h1>
-          <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro. Ex itaque voluptas dolorem harum incidunt!</p>
-        </div>  
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="absolute  bg-gradient-to-t from-primary-900 via-primary-900/50 to-[#676767]/50 w-full h-full inset-0 z-10">
+          </div>
+          <img src="assets/imgs/carousel5.jpg"
+            class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <div class="hero-content absolute inset-0 flex flex-col justify-end pb-10 items-center text-white z-30">
+            <h1 class="hero-title text-2xl md:text-4xl font-bold mb-4 font-quattro">Hero Title 5</h1>
+            <p class="hero-text text-sm md:text-lg mb-8 w-4/5 lg:w-1/2 text-center">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam minus neque amet sunt rem aliquid provident aut repudiandae porro.
+              Ex itaque voluptas dolorem harum incidunt!</p>
+          </div>
+        </div>
       </div>
-  </div>
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-      <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-      <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-  </div>
-  <!-- Slider controls -->
-  <button type="button" class="hidden absolute top-0 left-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="true" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+        <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 4"
+          data-carousel-slide-to="3"></button>
+        <button type="button" class="w-8 h-2 bg-primary-dark" aria-current="false" aria-label="Slide 5"
+          data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="hidden absolute top-0 left-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
           <span class="sr-only">Previous</span>
-      </span>
-  </button>
-  <button type="button" class="hidden absolute top-0 right-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </span>
+      </button>
+      <button type="button"
+        class="hidden absolute top-0 right-0 z-30 md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
           <span class="sr-only">Next</span>
-      </span>
-  </button>
-</div>
+        </span>
+      </button>
+    </div>
 
-</section>
+  </section>
 
 
 
@@ -467,7 +559,8 @@
             </div>
           </div>
 
-          <div class="mx-auto flex flex-col items-center justify-center px-8 py-10 bg-primary-200 scroll-py-5 rounded-md">
+          <div
+            class="mx-auto flex flex-col items-center justify-center px-8 py-10 bg-primary-200 scroll-py-5 rounded-md">
             <p class="pb-10 text-center font-[500]">Get a copy of the semester/sessional calendar</p>
             <a href=""
               class="px-8 py-3 bg-primary-700 rounded-md text-primary-50 hover:bg-primary-800 active:bg-primary-600">Download/View</a>
@@ -572,17 +665,22 @@
 
         <div class="w-full">
           <ul class="flex space-x-5">
-            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li><a href="" class="text-primary-50 text-3xl hover:text-primary-150"><i class="fab fa-instagram"></i></a>
+            </li>
           </ul>
         </div>
       </div>
       <div>
       </div>
     </div>
-    <p class="text-primary-50 text-center text-sm py-4 md:py-8 border-t border-t-primary-100">&copy; Premier Nursing College 2023</p>
+    <p class="text-primary-50 text-center text-sm py-4 md:py-8 border-t border-t-primary-100">&copy; Premier Nursing
+      College 2023</p>
 
   </footer>
   <script src="src/js/main.js" defer></script>
