@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/output.css">
+
+  <!-- Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=DM+Serif+Text&family=Quattrocento:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+
+
+    <title>PNC | Login Portal</title>
+</head>
+<body class="font-dm-sans">
+    <header class="sticky bg-primary-100  mx-auto border-b-2 border-primary-100 top-0 z-50 w-full">
+    <nav class="navbar sticky flex items-center justify-between mx-auto lg:px-4 lg:py-2 py-4 lg:w-4/5 px-10 z-50">
+        <div class="logo font-bold text-primary-lt font-quattro"><a href="index.html">Premier Nursing College</a></div>
+        <div>
+          <ul
+            class="hidden h-screen lg:h-auto nav-list mx-auto lg:flex items-center justify-center text-primary-dark absolute px-3 pl-6 lg:pl-0 lg:px-0 lg:relative lg:pt-0 space-y-2 lg:space-y-0 left-0 right-0 top-14 lg:top-auto lg:left-auto w-full lg:w-auto bg-primary-100">
+            <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="staff.html" class="nav-link">Staff Portal</a>
+            </li>
+            <li class="nav-item px-4 py-2 mx-1 w-1/2 lg:w-auto"><a href="student.html" class="nav-link">Student Portal</a>
+            </li>
+          </ul>
+        </div>
+        <svg
+          class="bars outline-none border-none cursor-pointer lg:hidden flex items-center  justify-center z-50 rotate-180 w-6 h-6"
+          aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <title>toggle Menu</title>
+          <path d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"
+            class="open-btn text-primary-lt"></path>
+  
+          <path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
+            stroke-linejoin="round" class="close-btn hidden text-primary-600"></path>
+        </svg>
+      </nav>
+    </header>
+
+
+    <section class="text-primary-dark">
+        <div class=" w-4/5 lg:w-1/2 mx-auto py-10">
+            <form action="" class="form shadow-lg rounded-md p-10 w-full mx-auto flex flex-col justify-center font-dm-sans">
+                <div class="title pb-5"><h4 class="text-3xl text-primary-500 text-center font-quattro">Student’s Login</h4></div>
+<div class="w-full lg:w-4/5 mx-auto space-y-3 flex flex-col justify-center">
+                <div class="space-y-2">
+                    <label for="regnumber">Matric No./Registration Number</label><br>
+                    <input type="text" name="regnumber" id="regnumber" class="w-full border-primary-dark rounded-md border-2 focus:border-primary-500 text-primary-lt">
+                </div>
+
+                <div class="space-y-2">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" class="w-full border-primary-dark rounded-md  border-2 focus:border-primary-500 text-primary-lt">
+                </div>
+
+                <div class="flex justify-end">
+                    <a href="" class="text-sm">Forgot your password?</a>
+                </div>
+
+                <div>
+                    <button type="submit" class="bg-primary-700 text-primary-100 w-full py-2 rounded-md text-lg mt-5">Log In</button>
+                </div>
+
+                <div class="lg:text-sm text-xs pt-5 text-center">
+                    <p class="inline">You need help logging in?</p><a href="" class="inline ml-1 underline">Read the Login guideline</a>
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-2 bg-primary-700 text-primary-100 w-full font-dm-sans">
+        <div class="text-center text-sm">
+            &copy; Premier Nursing College
+            <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span>
+        </div>
+            </footer>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>
